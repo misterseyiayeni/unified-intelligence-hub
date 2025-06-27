@@ -1,6 +1,6 @@
 # Unified Intelligence Hub (UIH)
 
-UIH is a RAG-based system that amongst many things improves the search intelligence, increases employee productivity, enhances decision-making, and customer experience of an organization.
+UIH is a RAG-based system that, amongst many things, improves the search intelligence, increases employee productivity, enhances decision-making, and customer experience of an organization.
 
 
 ## Business Case
