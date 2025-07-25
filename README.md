@@ -22,7 +22,7 @@ This solution is designed for a large organization that needs to unify two disti
 ## Business Benefits & Value Proposition
 The Unified Intelligence Hub (UIH) directly addresses these challenges by transforming disparate data into a strategic asset. It delivers tangible value across the entire organization:
 
-- 🚀 Increase Productivity & Efficiency: Drastically reduce the time employees spend searching for information. Get instant, accurate answers from - terabytes of documents instead of manually reading them.
+- 🚀 Increase Productivity & Efficiency: Drastically reduce the time employees spend searching for information. Get instant, accurate answers from terabytes of documents instead of manually reading them.
 - 💡 Enhance Decision-Making: Empower leadership with the ability to cross-reference internal policies with real-time market sentiment, leading to faster, more informed strategic decisions.
 - 🤝 Proactive Customer Engagement: Enable marketing and support teams to instantly connect live customer feedback from social media with technical documentation, allowing for rapid, accurate, and empathetic responses.
 - 🌐 Bridge Departmental Silos: Create a single source of truth that connects R&D insights with market desires, financial reports with operational data, and HR policies with employee feedback.
@@ -170,3 +170,23 @@ Flow: The ALB forwards the response back out to the internet.
 
 Endpoint: The End User's client application receives the response and displays the answer.
 
+
+## Tech/Infrastructure Stack
+
+The UIH is built on a robust, scalable, and secure serverless-first AWS architecture designed for enterprise workloads:
+
+- Data Ingestion: Amazon Kinesis (for real-time streams) & AWS Glue (for batch & streaming ETL).
+- Data Lake & Storage: Amazon S3 (for all raw, processed, and vectorized data).
+- AI/ML & Vectorization: Amazon SageMaker (for embedding generation at scale) & Amazon OpenSearch Service (for high-performance vector search).
+- Reasoning & Generation: Amazon Bedrock (providing access to state-of-the-art LLMs).
+- Application & API Layer: Amazon EKS (for resilient, scalable container orchestration) & Application Load Balancer.
+- Security & Networking: Amazon VPC, IAM, and KMS (for network isolation, least-privilege access, and end-to-end encryption).
+
+## Future Enhancements
+
+The current platform is just the beginning. The UIH architecture is designed for continuous evolution, with a clear roadmap for future capabilities:
+
+- Multi-Modal Search: Extend ingestion capabilities to include images, audio from meeting transcripts, and video content, allowing users to ask questions about all forms of media.
+- Agentic Workflows: Develop autonomous agents that can perform multi-step tasks, such as "Generate a summary of Q3 customer complaints, draft an internal response memo based on the 'Model X' service manual, and schedule a follow-up meeting."
+- Proactive Alerting: Implement a monitoring system that proactively identifies emerging trends or anomalies—such as a sudden spike in negative sentiment around a specific feature—and automatically alerts the relevant product or marketing teams.
+- Deeper Personalization: Tailor the user experience by creating role-based access and context, ensuring that search results and generated answers are prioritized based on the user's department and responsibilities (e.g., a financial analyst sees financial data first).
